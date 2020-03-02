@@ -1,0 +1,12 @@
+ENGINE LOGIC
+
+1. Store a list of vectors for all diseases.
+    1. Find a list of diseases and their symptoms.
+        -scrap through CDC's alphabetical disease lists
+        -For each tag, establish a vector that represents it
+            -can potentially combine search results from other sites
+            -Note that the more a word appear in non-medical documents, the less important it is
+            -Use other tf functions linke tf-idf
+2. Compare query and return the top 3 likely diseases.
+    -use sqlite for querying
+3. Query the CDC website for treatments, etc.
